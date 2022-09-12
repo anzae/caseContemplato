@@ -1,0 +1,11 @@
+extends auth
+
+block content
+  
+  ul
+    each val in tasks
+      li= val.task
+
+  form(method="post" action=`/tasks/${id}`)
+    input(type="text" placeholder="New task" value="" name="task")
+    button(type="submit") Add

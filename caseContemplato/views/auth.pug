@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    a(href=`/tasks/${id}`)
+      input(type="hidden" name="id" value=`${id}`)
+      button(type="submit") Tasks
+    br
+    br
+    a(href=`/api`)
+      button(type="submit") StarWars API
+    block content
